@@ -1,0 +1,14 @@
+<!-- DB의 설정값을 저장한 파일. -->
+<!-- url 이 DB 주소. name 이름과 jdbcUtil에 같은 이름으로 lookup에서.-->
+<Context>
+	<Resource name ="jdbc/OracleDB"
+	auth ="Container"
+	type ="javax.sql.DataSource"
+	username ="ATM"
+	password ="ATM"
+	driverClassName ="oracle.jdbc.driver.OracleDriver"
+	factory ="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+	url ="jdbc:oracle:thin:@192.168.0.60:1521:XE"
+	maxActivity ="400"
+	maxIdle="100"/>
+</Context>
